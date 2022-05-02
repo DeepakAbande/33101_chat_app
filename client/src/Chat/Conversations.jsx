@@ -33,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
 
 const Conversations = (props) => {
   const classes = useStyles();
-  const [conversations, setConversations] = useState([]);
+  const [conversations, setConversations] = useState(null);
   const [newConversation, setNewConversation] = useState(null);
   const getConversations = useGetConversations();
 
